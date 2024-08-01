@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54adf263094736b3a3a7892bf9ddc3a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_54adf263094736b3a3a7892bf9ddc3a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54adf263094736b3a3a7892bf9ddc3a0 = L.map(
+                "map_54adf263094736b3a3a7892bf9ddc3a0",
+                {
+                    center: [-15.7801, -47.9292],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3f42fd35994b8ac3700cb9fedf6ec266 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3f42fd35994b8ac3700cb9fedf6ec266.addTo(map_54adf263094736b3a3a7892bf9ddc3a0);
+        
+    
+            var marker_cluster_7809effc657f9619acfb2724d27adc2f = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_6b0c5c5e8f3464e1255c79febb3ae38c = L.marker(
+                [-23.50527855218351, -46.64245482147892],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_02f6e72d77cdeba6e273132bd990b679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b0c5c5e8f3464e1255c79febb3ae38c.setIcon(icon_02f6e72d77cdeba6e273132bd990b679);
+        
+    
+        var popup_39d8003b6136295e3dc1ef07e64b9b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68759d33d1d5aaa956e1f7b5f9949e4c = $(`<div id="html_68759d33d1d5aaa956e1f7b5f9949e4c" style="width: 100.0%; height: 100.0%;">Datacenter: TESP01 - Datacenter TOTVS</div>`)[0];
+                popup_39d8003b6136295e3dc1ef07e64b9b14.setContent(html_68759d33d1d5aaa956e1f7b5f9949e4c);
+            
+        
+
+        marker_6b0c5c5e8f3464e1255c79febb3ae38c.bindPopup(popup_39d8003b6136295e3dc1ef07e64b9b14)
+        ;
+
+        
+    
+    
+            var marker_65dd454df2b489631cfdcbf40ededde6 = L.marker(
+                [-23.07099579616714, -47.0118477311319],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_3509046a3e95dca055a3b26920e8dfc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65dd454df2b489631cfdcbf40ededde6.setIcon(icon_3509046a3e95dca055a3b26920e8dfc2);
+        
+    
+        var popup_6ba2995de3f8ffae66cb15323739b46d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9b1d9db447c7e834d0948013b084074 = $(`<div id="html_b9b1d9db447c7e834d0948013b084074" style="width: 100.0%; height: 100.0%;">Datacenter: TESP02 - Ascenty</div>`)[0];
+                popup_6ba2995de3f8ffae66cb15323739b46d.setContent(html_b9b1d9db447c7e834d0948013b084074);
+            
+        
+
+        marker_65dd454df2b489631cfdcbf40ededde6.bindPopup(popup_6ba2995de3f8ffae66cb15323739b46d)
+        ;
+
+        
+    
+    
+            var marker_121dd1d5b8e42c4301ccfd2812e0b016 = L.marker(
+                [-22.847915265055164, -47.15345803848322],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_99d9e854c8c5e2558af031ca32bad93a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_121dd1d5b8e42c4301ccfd2812e0b016.setIcon(icon_99d9e854c8c5e2558af031ca32bad93a);
+        
+    
+        var popup_6397447093cbd4c053e6d4301d99aa94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af33662bdcc66268722517fb37afe5c = $(`<div id="html_7af33662bdcc66268722517fb37afe5c" style="width: 100.0%; height: 100.0%;">Datacenter: TESP03 - Ascenty</div>`)[0];
+                popup_6397447093cbd4c053e6d4301d99aa94.setContent(html_7af33662bdcc66268722517fb37afe5c);
+            
+        
+
+        marker_121dd1d5b8e42c4301ccfd2812e0b016.bindPopup(popup_6397447093cbd4c053e6d4301d99aa94)
+        ;
+
+        
+    
+    
+            var marker_09c59294ab717fa08deb6ee27a1a7a10 = L.marker(
+                [-23.191617327358653, -46.97459817345705],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_b44eeb836dd20ad03bee9ab7e2276e85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09c59294ab717fa08deb6ee27a1a7a10.setIcon(icon_b44eeb836dd20ad03bee9ab7e2276e85);
+        
+    
+        var popup_6cfc730c07bd7b359e70208ace8de234 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd4331638dd1bcc304daeb3037698a19 = $(`<div id="html_dd4331638dd1bcc304daeb3037698a19" style="width: 100.0%; height: 100.0%;">Datacenter: TESP04 - Ascenty</div>`)[0];
+                popup_6cfc730c07bd7b359e70208ace8de234.setContent(html_dd4331638dd1bcc304daeb3037698a19);
+            
+        
+
+        marker_09c59294ab717fa08deb6ee27a1a7a10.bindPopup(popup_6cfc730c07bd7b359e70208ace8de234)
+        ;
+
+        
+    
+    
+            var marker_9902f8d56a0fab7a0a11f81946850ea2 = L.marker(
+                [-23.491838224077792, -46.77828275334958],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_7d96e0194ea6ab23068fffda942538dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9902f8d56a0fab7a0a11f81946850ea2.setIcon(icon_7d96e0194ea6ab23068fffda942538dd);
+        
+    
+        var popup_0b202065b4a50bde7b8d078300366b65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_304a682166168eeaa3fa38c2a34aef7b = $(`<div id="html_304a682166168eeaa3fa38c2a34aef7b" style="width: 100.0%; height: 100.0%;">Datacenter: TESP05 - Ascenty</div>`)[0];
+                popup_0b202065b4a50bde7b8d078300366b65.setContent(html_304a682166168eeaa3fa38c2a34aef7b);
+            
+        
+
+        marker_9902f8d56a0fab7a0a11f81946850ea2.bindPopup(popup_0b202065b4a50bde7b8d078300366b65)
+        ;
+
+        
+    
+    
+            var marker_00d1f3495f8d08c5c449617cb87f71b6 = L.marker(
+                [-23.465994190029917, -46.86326588879519],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_a8a7d9350513c178e19f2e4df59043b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00d1f3495f8d08c5c449617cb87f71b6.setIcon(icon_a8a7d9350513c178e19f2e4df59043b9);
+        
+    
+        var popup_7f42d149bb78bee7fe9b78fc5640f2ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1a5435fa7d761ff23adaebbd82aeaaf = $(`<div id="html_c1a5435fa7d761ff23adaebbd82aeaaf" style="width: 100.0%; height: 100.0%;">Datacenter: TESP06 - Equinix</div>`)[0];
+                popup_7f42d149bb78bee7fe9b78fc5640f2ed.setContent(html_c1a5435fa7d761ff23adaebbd82aeaaf);
+            
+        
+
+        marker_00d1f3495f8d08c5c449617cb87f71b6.bindPopup(popup_7f42d149bb78bee7fe9b78fc5640f2ed)
+        ;
+
+        
+    
+    
+            var marker_17b4ae8010f3573154e02cdb5aee2a5a = L.marker(
+                [-23.4918775824572, -46.77826129567751],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_25dabd9aab538680e1d5275b14bc1979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_17b4ae8010f3573154e02cdb5aee2a5a.setIcon(icon_25dabd9aab538680e1d5275b14bc1979);
+        
+    
+        var popup_1a4eabed39e22c0dff89dc8ffd9c0bab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ff7ae22b9278d0f29993bac5c165483 = $(`<div id="html_3ff7ae22b9278d0f29993bac5c165483" style="width: 100.0%; height: 100.0%;">Datacenter: TBSP01 - Ascenty</div>`)[0];
+                popup_1a4eabed39e22c0dff89dc8ffd9c0bab.setContent(html_3ff7ae22b9278d0f29993bac5c165483);
+            
+        
+
+        marker_17b4ae8010f3573154e02cdb5aee2a5a.bindPopup(popup_1a4eabed39e22c0dff89dc8ffd9c0bab)
+        ;
+
+        
+    
+    
+            var marker_2fdc95393fa4518f0fe607417fb46856 = L.marker(
+                [-23.492293324503112, -46.77766743641614],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_899ebe69082e2d84be138a4aa9a71adf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fdc95393fa4518f0fe607417fb46856.setIcon(icon_899ebe69082e2d84be138a4aa9a71adf);
+        
+    
+        var popup_a436f413f417bfe15a7f2ba0807ecc6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02f6d70d958fc9cf5b0fb2533d30a9b2 = $(`<div id="html_02f6d70d958fc9cf5b0fb2533d30a9b2" style="width: 100.0%; height: 100.0%;">Datacenter: TBSP02 - Ascenty</div>`)[0];
+                popup_a436f413f417bfe15a7f2ba0807ecc6d.setContent(html_02f6d70d958fc9cf5b0fb2533d30a9b2);
+            
+        
+
+        marker_2fdc95393fa4518f0fe607417fb46856.bindPopup(popup_a436f413f417bfe15a7f2ba0807ecc6d)
+        ;
+
+        
+    
+    
+            var marker_d65d1431ad258776a1b9bfff83f292b1 = L.marker(
+                [-3.830522923134871, -38.61120140257615],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_4def962638df06168f43d4cf70667697 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d65d1431ad258776a1b9bfff83f292b1.setIcon(icon_4def962638df06168f43d4cf70667697);
+        
+    
+        var popup_eeecd3a51f857f8a752e45608beae99d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9708d7cf6359cf3c82048d4d68828bf = $(`<div id="html_f9708d7cf6359cf3c82048d4d68828bf" style="width: 100.0%; height: 100.0%;">Datacenter: TECE01 - Ascenty</div>`)[0];
+                popup_eeecd3a51f857f8a752e45608beae99d.setContent(html_f9708d7cf6359cf3c82048d4d68828bf);
+            
+        
+
+        marker_d65d1431ad258776a1b9bfff83f292b1.bindPopup(popup_eeecd3a51f857f8a752e45608beae99d)
+        ;
+
+        
+    
+    
+            var marker_9deb861e924ccb5c6f8a90e793e0fc03 = L.marker(
+                [-3.735203017653285, -38.46230030257669],
+                {}
+            ).addTo(marker_cluster_7809effc657f9619acfb2724d27adc2f);
+        
+    
+            var icon_d778d226aead19a37139f45a7072340c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9deb861e924ccb5c6f8a90e793e0fc03.setIcon(icon_d778d226aead19a37139f45a7072340c);
+        
+    
+        var popup_43aaf7421bb6de1d23bdef7c361720b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c893e054118f42cea68d547c0764b551 = $(`<div id="html_c893e054118f42cea68d547c0764b551" style="width: 100.0%; height: 100.0%;">Datacenter: TBCE01 - Angola Cables</div>`)[0];
+                popup_43aaf7421bb6de1d23bdef7c361720b3.setContent(html_c893e054118f42cea68d547c0764b551);
+            
+        
+
+        marker_9deb861e924ccb5c6f8a90e793e0fc03.bindPopup(popup_43aaf7421bb6de1d23bdef7c361720b3)
+        ;
+
+        
+    
+    
+            marker_cluster_7809effc657f9619acfb2724d27adc2f.addTo(map_54adf263094736b3a3a7892bf9ddc3a0);
+        
+    
+            var heat_map_b0ec4ab0ccfdb32f031ef722307bb645 = L.heatLayer(
+                [[-23.50527855218351, -46.64245482147892], [-23.07099579616714, -47.0118477311319], [-22.847915265055164, -47.15345803848322], [-23.191617327358653, -46.97459817345705], [-23.491838224077792, -46.77828275334958], [-23.465994190029917, -46.86326588879519], [-23.4918775824572, -46.77826129567751], [-23.492293324503112, -46.77766743641614], [-3.830522923134871, -38.61120140257615], [-3.735203017653285, -38.46230030257669]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_b0ec4ab0ccfdb32f031ef722307bb645.addTo(map_54adf263094736b3a3a7892bf9ddc3a0);
+        
+</script>
+</html>
